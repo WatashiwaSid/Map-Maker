@@ -1,26 +1,10 @@
-# import folium package 
+#pip install folium
 import folium 
   
 # Map method of folium return Map object 
   
-# Here we pass coordinates of Gfg  
-# and starting Zoom level = 12 
-
-
-
-def Latitude():
-    x = input(float("Latitude : \n"))
-    return x
-
-def Longitude():
-    y = input(float("Longitude : \n"))
-    return y
-
-# def return_text():
-#     global Latitude
-#     global Longitude
-#     coordinate_1 = 
-
+# Here I pass coordinates of Rishikesh  
+# and starting Zoom level = 15 
 
 
 
@@ -29,7 +13,7 @@ my_map = folium.Map(location = [Latitude, Longitude],
   
 # Pass a string in popup parameter 
 folium.Marker([Latitude, Longitude], 
-               popup = ' Rishikesh').add_to(my_map) 
+               popup = 'Rishikesh').add_to(my_map) 
   
   
 my_map.save(" my_map.html ") 
