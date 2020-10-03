@@ -43,8 +43,8 @@ def latlong(n):
     def raw_cords():
         global Latitude
         global Longitude
-        inp_lat = float(input('Enter your Latitude : '))
-        inp_long = float(input('Enter your Longitude : '))
+        inp_lat = str(input('Enter your Latitude : '))
+        inp_long = str(input('Enter your Longitude : '))
         Latitude,Longitude = inp_lat,inp_long
 
 
@@ -118,19 +118,25 @@ def html_runner():
                 print('Something went wrong!\nExiting...')
 
 
+def code_runner():
 
-print('\nThis is a Map-Generator program.\nThat generates a Interactive Map in HTML format that can be opened in any browser.')
-print('\nPlease follow the steps correctly.\nMake sure you have Internet connection.')
+    print('\nThis is a Map-Generator program.\nThat generates a Interactive Map in HTML format that can be opened in any browser.')
+    print('\nPlease follow the steps correctly.\nMake sure you have Internet connection.')
 
-user_gen = input('\nEnter \"my_location\" to get your location.\nEnter \"address\" to enter your Address.\nEnter \"raw_cords\" to get your Coordinates.\nEnter here : ')
+    user_gen = input('\nEnter \"my_location\" to get your location.\nEnter \"address\" to enter your Address.\nEnter \"raw_cords\" to get your Coordinates.\nEnter here : ')
 
-latlong(user_gen)
-address_gen()
-map_generator()
+    latlong(user_gen)
+    address_gen()
+    map_generator()
 
-user_open = input('\nEnter \"open\" to open the map in browser.\nOr enter \"quit\" to Quit the program.\nEnter here : ')
+    user_open = input('\nEnter \"open\" to open the map in browser.\nOr enter \"quit\" to Quit the program.\nEnter here : ')
 
-if user_open == 'open':
-    html_runner()
-elif user_open == 'quit':
-    quit()
+    if user_open == 'open':
+        html_runner()
+        code_runner()
+    elif user_open == 'quit':
+        quit()
+    
+
+code_runner()
+    

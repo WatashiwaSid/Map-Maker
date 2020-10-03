@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_558d42048a2f4ea48237fb8d37aa9e4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_558d42048a2f4ea48237fb8d37aa9e4f" ></div>
+        
+</body>
+<script>    
+    
+            var map_558d42048a2f4ea48237fb8d37aa9e4f = L.map(
+                "map_558d42048a2f4ea48237fb8d37aa9e4f",
+                {
+                    center: [19.13261855, 72.91497912536826],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4a4b8c3d76994706a46cbc98ef7ac082 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_558d42048a2f4ea48237fb8d37aa9e4f);
+        
+    
+            var marker_f19f330b5616425ca9e8cdbbe102f792 = L.marker(
+                [19.13261855, 72.91497912536826],
+                {}
+            ).addTo(map_558d42048a2f4ea48237fb8d37aa9e4f);
+        
+    
+            var icon_65a84662a16b4304a8010c87c5a0faca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-down ", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f19f330b5616425ca9e8cdbbe102f792.setIcon(icon_65a84662a16b4304a8010c87c5a0faca);
+        
+    
+        var popup_a3dfab9335e14893b2c87d8004cbb46f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9c05f4781b1d4b5eab0fd85ee9cddeeb = $(`<div id="html_9c05f4781b1d4b5eab0fd85ee9cddeeb" style="width: 100.0%; height: 100.0%;"><strong>Indian Institute of Technology Bombay, Powai, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400076, India</strong></div>`)[0];
+            popup_a3dfab9335e14893b2c87d8004cbb46f.setContent(html_9c05f4781b1d4b5eab0fd85ee9cddeeb);
+        
+
+        marker_f19f330b5616425ca9e8cdbbe102f792.bindPopup(popup_a3dfab9335e14893b2c87d8004cbb46f)
+        ;
+
+        
+    
+    
+            marker_f19f330b5616425ca9e8cdbbe102f792.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
