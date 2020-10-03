@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d45abe5a2b64129bad019959a0b9cad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6d45abe5a2b64129bad019959a0b9cad" ></div>
+        
+</body>
+<script>    
+    
+            var map_6d45abe5a2b64129bad019959a0b9cad = L.map(
+                "map_6d45abe5a2b64129bad019959a0b9cad",
+                {
+                    center: [25.622468949048944, 85.04954131462861],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3dab9e3e8c894e16b372a4b7c7370996 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6d45abe5a2b64129bad019959a0b9cad);
+        
+    
+            var marker_954acbdde2cc4afd87f576344e91320d = L.marker(
+                [25.622468949048944, 85.04954131462861],
+                {}
+            ).addTo(map_6d45abe5a2b64129bad019959a0b9cad);
+        
+    
+            var icon_5bb30beee1f74e40b90ba4e89b625369 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-down ", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_954acbdde2cc4afd87f576344e91320d.setIcon(icon_5bb30beee1f74e40b90ba4e89b625369);
+        
+    
+        var popup_91bdffc3c3964949a864686b436ee4df = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0816f4ac05ff4e7388a5f73fca1e3991 = $(`<div id="html_0816f4ac05ff4e7388a5f73fca1e3991" style="width: 100.0%; height: 100.0%;"><strong>Priyadarshi Nagar, Danapur, Dinapur-Cum-Khagaul, Patna, Bihar, 801503, India</strong></div>`)[0];
+            popup_91bdffc3c3964949a864686b436ee4df.setContent(html_0816f4ac05ff4e7388a5f73fca1e3991);
+        
+
+        marker_954acbdde2cc4afd87f576344e91320d.bindPopup(popup_91bdffc3c3964949a864686b436ee4df)
+        ;
+
+        
+    
+    
+            marker_954acbdde2cc4afd87f576344e91320d.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
