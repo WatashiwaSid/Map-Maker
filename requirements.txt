@@ -1,0 +1,5 @@
+eel
+folium
+fontawesome
+geocoder
+geopygit 
