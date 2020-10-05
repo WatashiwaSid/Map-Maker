@@ -2,4 +2,4 @@ eel
 folium
 fontawesome
 geocoder
-geopygit 
+geopy
