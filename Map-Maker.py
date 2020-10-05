@@ -2,6 +2,7 @@
 import os
 import eel
 import folium
+import pyfiglet
 import fontawesome as fa
 import geocoder 
 from geopy.geocoders import Nominatim
@@ -124,7 +125,7 @@ def html_runner():
 
 
 def code_runner():
-
+    header = pyfiglet.figlet_format("Map Maker", font = "5lineoblique" )
     print('\nThis is a Map-Generator program.\nThat generates a Interactive Map in HTML format that can be opened in any browser.')
     print('\nPlease follow the steps correctly.\nMake sure you have Internet connection.')
 
