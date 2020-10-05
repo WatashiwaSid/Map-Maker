@@ -3,3 +3,4 @@ folium
 fontawesome
 geocoder
 geopy
+pyfiglet
