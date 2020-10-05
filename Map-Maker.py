@@ -125,7 +125,9 @@ def html_runner():
 
 
 def code_runner():
-    header = pyfiglet.figlet_format("Map Maker", font = "5lineoblique" )
+
+    header = pyfiglet.figlet_format("Map Maker", font = "5lineoblique" ) 
+    print(header)
     print('\nThis is a Map-Generator program.\nThat generates a Interactive Map in HTML format that can be opened in any browser.')
     print('\nPlease follow the steps correctly.\nMake sure you have Internet connection.')
 
