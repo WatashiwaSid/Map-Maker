@@ -1,4 +1,5 @@
 # Imports 
+import os
 import eel
 import folium
 import fontawesome as fa
@@ -87,7 +88,11 @@ def map_generator():
     print('Creating file...')
     file_name = Address.split(',')[0]
     file_name = f'{file_name}.html'
-    m.save(f'web\{file_name}')
+    if os.path.isdir('web') == True:
+        m.save(f'web\{file_name}')
+    elif os.path.isdir('web') == False:
+        os.mkdir('web')
+        m.save(f'web\{file_name}')
 
 def html_runner():
     global file_name
