@@ -1,4 +1,5 @@
 # Imports 
+import os
 import eel
 import folium
 import pyfiglet
@@ -88,7 +89,11 @@ def map_generator():
     print('Creating file...')
     file_name = Address.split(',')[0]
     file_name = f'{file_name}.html'
-    m.save(f'web\{file_name}')
+    if os.path.isdir('web') == True:
+        m.save(f'web\{file_name}')
+    elif os.path.isdir('web') == False:
+        os.mkdir('web')
+        m.save(f'web\{file_name}')
 
 def html_runner():
     global file_name
@@ -120,7 +125,7 @@ def html_runner():
 
 
 def code_runner():
-    
+
     header = pyfiglet.figlet_format("Map Maker", font = "5lineoblique" ) 
     print(header)
     print('\nThis is a Map-Generator program.\nThat generates a Interactive Map in HTML format that can be opened in any browser.')
