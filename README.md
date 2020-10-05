@@ -43,8 +43,6 @@
 
 #### Anyone can contribute or give suggestions by sending Pull Requests.
 
-#### A Small contribution made by [Harsh Raj.](https://github.com/DeadProgrammer0)
-
 ## License
 
 #### [Click here to read License.](https://github.com/yatocodes/Map-Maker/blob/main/LICENSE)
